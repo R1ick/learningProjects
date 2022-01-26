@@ -1,0 +1,36 @@
+
+/* Class = "UIBarButtonItem"; title = "К игровой сцене"; ObjectID = "ASL-1Y-UBG"; */
+"ASL-1Y-UBG.title" = "К игровой сцене";
+
+/* Class = "UIBarButtonItem"; title = "К стартовому окну"; ObjectID = "FS2-B6-Md8"; */
+"FS2-B6-Md8.title" = "К стартовому окну";
+
+/* Class = "UINavigationItem"; title = "Результаты"; ObjectID = "Irs-WD-fg1"; */
+"Irs-WD-fg1.title" = "Результаты";
+
+/* Class = "UILabel"; text = "     Имя игрока                    Количество переворотов"; ObjectID = "UZB-AR-yDq"; */
+"UZB-AR-yDq.text" = "     Имя игрока                    Количество переворотов";
+
+/* Class = "UIButton"; configuration.title = "Результаты"; ObjectID = "WXV-lb-wAA"; */
+"WXV-lb-wAA.configuration.title" = "Результаты";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WXV-lb-wAA"; */
+"WXV-lb-wAA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Key"; ObjectID = "ZtV-hH-KmI"; */
+"ZtV-hH-KmI.text" = "Key";
+
+/* Class = "UILabel"; text = "Имя игрока"; ObjectID = "gYb-S6-q0g"; */
+"gYb-S6-q0g.text" = "Имя игрока";
+
+/* Class = "UILabel"; text = "Количество переворотов"; ObjectID = "hLd-tC-JqP"; */
+"hLd-tC-JqP.text" = "Количество переворотов";
+
+/* Class = "UIButton"; configuration.title = "Новая игра"; ObjectID = "uN2-eS-Wze"; */
+"uN2-eS-Wze.configuration.title" = "Новая игра";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uN2-eS-Wze"; */
+"uN2-eS-Wze.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "vo9-pz-Oat"; */
+"vo9-pz-Oat.text" = "Value";

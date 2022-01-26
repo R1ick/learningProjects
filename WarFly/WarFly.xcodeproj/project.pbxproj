@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4083D2E27980C1700D63CD6 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4083D2D27980C1700D63CD6 /* Enemy.swift */; };
+		C4083D3027980C6D00D63CD6 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4083D2F27980C6D00D63CD6 /* Enemy_2.atlas */; };
+		C4083D322798167E00D63CD6 /* Enemy_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4083D312798167E00D63CD6 /* Enemy_1.atlas */; };
+		C4083D3427981C1800D63CD6 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4083D3327981C1800D63CD6 /* BluePowerUp.atlas */; };
+		C4083D3627981FF600D63CD6 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4083D3527981FF600D63CD6 /* BluePowerUp.swift */; };
+		C4083D3827981FFD00D63CD6 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4083D3727981FFD00D63CD6 /* GreenPowerUp.swift */; };
+		C4083D3A279826F800D63CD6 /* YellowAmmo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4083D39279826F800D63CD6 /* YellowAmmo.atlas */; };
+		C4083D3D2798275200D63CD6 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4083D3C2798275200D63CD6 /* Shot.swift */; };
+		C4083D3F2798295700D63CD6 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4083D3E2798295700D63CD6 /* YellowShot.swift */; };
+		C418EAD52795A24100B1962F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418EAD42795A24100B1962F /* AppDelegate.swift */; };
+		C418EADB2795A24100B1962F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418EADA2795A24100B1962F /* GameScene.swift */; };
+		C418EADD2795A24100B1962F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418EADC2795A24100B1962F /* GameViewController.swift */; };
+		C418EAE02795A24100B1962F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C418EADE2795A24100B1962F /* Main.storyboard */; };
+		C418EAE22795A24100B1962F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C418EAE12795A24100B1962F /* Assets.xcassets */; };
+		C418EAE52795A24100B1962F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C418EAE32795A24100B1962F /* LaunchScreen.storyboard */; };
+		C418EAEC2795A46100B1962F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418EAEB2795A46100B1962F /* Background.swift */; };
+		C42CCED4279A9A52001AB582 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CCED3279A9A52001AB582 /* HUD.swift */; };
+		C42CCED8279A9D83001AB582 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CCED7279A9D83001AB582 /* ButtonNode.swift */; };
+		C483D3FC27972FE400F3B15D /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483D3FB27972FE400F3B15D /* PowerUp.swift */; };
+		C483D3FF279734AF00F3B15D /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C483D3FE279734AF00F3B15D /* GreenPowerUp.atlas */; };
+		C499C189279AC89600B726BA /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499C188279AC89600B726BA /* PauseScene.swift */; };
+		C499C18B279ACE2A00B726BA /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499C18A279ACE2A00B726BA /* SceneManager.swift */; };
+		C499C18D279AD37D00B726BA /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499C18C279AD37D00B726BA /* ParentScene.swift */; };
+		C499C18F279AD55F00B726BA /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499C18E279AD55F00B726BA /* OptionsScene.swift */; };
+		C4AA50212796A69900BA0984 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA50202796A69900BA0984 /* Island.swift */; };
+		C4AA50232796AB0600BA0984 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA50222796AB0600BA0984 /* Cloud.swift */; };
+		C4AA50252796B04900BA0984 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA50242796B04900BA0984 /* PlayerPlane.swift */; };
+		C4AA50272796B0EE00BA0984 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C4AA50262796B0EE00BA0984 /* PlayerPlane.atlas */; };
+		C4AA50292796BE5700BA0984 /* GameBackgroundSprite + Extension prot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA50282796BE5700BA0984 /* GameBackgroundSprite + Extension prot.swift */; };
+		C4AA6528279E7E31006B6F87 /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA6527279E7E31006B6F87 /* BestScene.swift */; };
+		C4AA652B279E82FB006B6F87 /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = C4AA6529279E82FA006B6F87 /* EnemyExplosion.sks */; };
+		C4AA652C279E82FB006B6F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AA652A279E82FB006B6F87 /* Assets.xcassets */; };
+		C4AA652F279E87D5006B6F87 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA652E279E87D5006B6F87 /* GameOverScene.swift */; };
+		C4C48A9E279ED7120086904F /* hitSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4C48A9D279ED7120086904F /* hitSound.wav */; };
+		C4C48AA1279ED8CA0086904F /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C48AA0279ED8CA0086904F /* GameSettings.swift */; };
+		C4F2C717279FEBCC00F4DD1D /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4C48A9F279ED7170086904F /* backgroundMusic.m4a */; };
+		C4F65D4627999084006D83CD /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F65D4527999084006D83CD /* Assets.swift */; };
+		C4F65D48279993E9006D83CD /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F65D47279993E9006D83CD /* MenuScene.swift */; };
+		C4F65D4A27999691006D83CD /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F65D4927999691006D83CD /* BitMaskCategory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4083D2D27980C1700D63CD6 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		C4083D2F27980C6D00D63CD6 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
+		C4083D312798167E00D63CD6 /* Enemy_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_1.atlas; sourceTree = "<group>"; };
+		C4083D3327981C1800D63CD6 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
+		C4083D3527981FF600D63CD6 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
+		C4083D3727981FFD00D63CD6 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
+		C4083D39279826F800D63CD6 /* YellowAmmo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = YellowAmmo.atlas; sourceTree = "<group>"; };
+		C4083D3C2798275200D63CD6 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		C4083D3E2798295700D63CD6 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
+		C418EAD12795A24100B1962F /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C418EAD42795A24100B1962F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C418EADA2795A24100B1962F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C418EADC2795A24100B1962F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C418EADF2795A24100B1962F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C418EAE12795A24100B1962F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C418EAE42795A24100B1962F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C418EAEB2795A46100B1962F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		C42CCED3279A9A52001AB582 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		C42CCED7279A9D83001AB582 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		C483D3FB27972FE400F3B15D /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
+		C483D3FE279734AF00F3B15D /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
+		C499C188279AC89600B726BA /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
+		C499C18A279ACE2A00B726BA /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		C499C18C279AD37D00B726BA /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
+		C499C18E279AD55F00B726BA /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
+		C4AA50202796A69900BA0984 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		C4AA50222796AB0600BA0984 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		C4AA50242796B04900BA0984 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
+		C4AA50262796B0EE00BA0984 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		C4AA50282796BE5700BA0984 /* GameBackgroundSprite + Extension prot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSprite + Extension prot.swift"; sourceTree = "<group>"; };
+		C4AA6527279E7E31006B6F87 /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
+		C4AA6529279E82FA006B6F87 /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
+		C4AA652A279E82FB006B6F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4AA652E279E87D5006B6F87 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		C4C48A9D279ED7120086904F /* hitSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitSound.wav; sourceTree = "<group>"; };
+		C4C48A9F279ED7170086904F /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
+		C4C48AA0279ED8CA0086904F /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		C4F65D4527999084006D83CD /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C4F65D47279993E9006D83CD /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = WarFly/Scenes/MenuScene.swift; sourceTree = SOURCE_ROOT; };
+		C4F65D4927999691006D83CD /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C418EACE2795A24100B1962F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4083D3B2798273500D63CD6 /* Atlasses */ = {
+			isa = PBXGroup;
+			children = (
+				C4083D39279826F800D63CD6 /* YellowAmmo.atlas */,
+				C4083D312798167E00D63CD6 /* Enemy_1.atlas */,
+				C4083D2F27980C6D00D63CD6 /* Enemy_2.atlas */,
+				C4083D3327981C1800D63CD6 /* BluePowerUp.atlas */,
+				C483D3FE279734AF00F3B15D /* GreenPowerUp.atlas */,
+				C4AA50262796B0EE00BA0984 /* PlayerPlane.atlas */,
+			);
+			path = Atlasses;
+			sourceTree = "<group>";
+		};
+		C418EAC82795A24100B1962F = {
+			isa = PBXGroup;
+			children = (
+				C418EAD32795A24100B1962F /* WarFly */,
+				C418EAD22795A24100B1962F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C418EAD22795A24100B1962F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C418EAD12795A24100B1962F /* WarFly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C418EAD32795A24100B1962F /* WarFly */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA652D279E8304006B6F87 /* Particles */,
+				C42CCED6279A9BA2001AB582 /* Managers */,
+				C49EFEBF2797EBE200D118A8 /* Scenes */,
+				C49EFEBB2797EBA300D118A8 /* Classes */,
+				C49EFEBC2797EBB200D118A8 /* Protocols */,
+				C49EFEBD2797EBC600D118A8 /* Controllers */,
+				C42CCED5279A9B8C001AB582 /* Supporting files */,
+				C4083D3B2798273500D63CD6 /* Atlasses */,
+			);
+			path = WarFly;
+			sourceTree = "<group>";
+		};
+		C42CCED5279A9B8C001AB582 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C418EAD42795A24100B1962F /* AppDelegate.swift */,
+				C418EADE2795A24100B1962F /* Main.storyboard */,
+				C418EAE12795A24100B1962F /* Assets.xcassets */,
+				C418EAE32795A24100B1962F /* LaunchScreen.storyboard */,
+				C4C48A9F279ED7170086904F /* backgroundMusic.m4a */,
+				C4C48A9D279ED7120086904F /* hitSound.wav */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C42CCED6279A9BA2001AB582 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F65D4527999084006D83CD /* Assets.swift */,
+				C4F65D4927999691006D83CD /* BitMaskCategory.swift */,
+				C499C18A279ACE2A00B726BA /* SceneManager.swift */,
+				C4C48AA0279ED8CA0086904F /* GameSettings.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C49EFEBB2797EBA300D118A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA50242796B04900BA0984 /* PlayerPlane.swift */,
+				C4083D2D27980C1700D63CD6 /* Enemy.swift */,
+				C483D3FB27972FE400F3B15D /* PowerUp.swift */,
+				C4083D3527981FF600D63CD6 /* BluePowerUp.swift */,
+				C4083D3727981FFD00D63CD6 /* GreenPowerUp.swift */,
+				C4AA50202796A69900BA0984 /* Island.swift */,
+				C4AA50222796AB0600BA0984 /* Cloud.swift */,
+				C4083D3C2798275200D63CD6 /* Shot.swift */,
+				C4083D3E2798295700D63CD6 /* YellowShot.swift */,
+				C418EAEB2795A46100B1962F /* Background.swift */,
+				C42CCED7279A9D83001AB582 /* ButtonNode.swift */,
+				C4AA652A279E82FB006B6F87 /* Assets.xcassets */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C49EFEBC2797EBB200D118A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA50282796BE5700BA0984 /* GameBackgroundSprite + Extension prot.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C49EFEBD2797EBC600D118A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C418EADC2795A24100B1962F /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C49EFEBF2797EBE200D118A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C499C18C279AD37D00B726BA /* ParentScene.swift */,
+				C418EADA2795A24100B1962F /* GameScene.swift */,
+				C4F65D47279993E9006D83CD /* MenuScene.swift */,
+				C499C188279AC89600B726BA /* PauseScene.swift */,
+				C499C18E279AD55F00B726BA /* OptionsScene.swift */,
+				C4AA6527279E7E31006B6F87 /* BestScene.swift */,
+				C42CCED3279A9A52001AB582 /* HUD.swift */,
+				C4AA652E279E87D5006B6F87 /* GameOverScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C4AA652D279E8304006B6F87 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA6529279E82FA006B6F87 /* EnemyExplosion.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C418EAD02795A24100B1962F /* WarFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C418EAE82795A24100B1962F /* Build configuration list for PBXNativeTarget "WarFly" */;
+			buildPhases = (
+				C418EACD2795A24100B1962F /* Sources */,
+				C418EACE2795A24100B1962F /* Frameworks */,
+				C418EACF2795A24100B1962F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WarFly;
+			productName = WarFly;
+			productReference = C418EAD12795A24100B1962F /* WarFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C418EAC92795A24100B1962F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C418EAD02795A24100B1962F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C418EACC2795A24100B1962F /* Build configuration list for PBXProject "WarFly" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C418EAC82795A24100B1962F;
+			productRefGroup = C418EAD22795A24100B1962F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C418EAD02795A24100B1962F /* WarFly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C418EACF2795A24100B1962F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F2C717279FEBCC00F4DD1D /* backgroundMusic.m4a in Resources */,
+				C418EAE02795A24100B1962F /* Main.storyboard in Resources */,
+				C483D3FF279734AF00F3B15D /* GreenPowerUp.atlas in Resources */,
+				C4AA652C279E82FB006B6F87 /* Assets.xcassets in Resources */,
+				C4AA50272796B0EE00BA0984 /* PlayerPlane.atlas in Resources */,
+				C4083D3A279826F800D63CD6 /* YellowAmmo.atlas in Resources */,
+				C4083D322798167E00D63CD6 /* Enemy_1.atlas in Resources */,
+				C4083D3027980C6D00D63CD6 /* Enemy_2.atlas in Resources */,
+				C4AA652B279E82FB006B6F87 /* EnemyExplosion.sks in Resources */,
+				C418EAE22795A24100B1962F /* Assets.xcassets in Resources */,
+				C4083D3427981C1800D63CD6 /* BluePowerUp.atlas in Resources */,
+				C4C48A9E279ED7120086904F /* hitSound.wav in Resources */,
+				C418EAE52795A24100B1962F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C418EACD2795A24100B1962F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C418EADB2795A24100B1962F /* GameScene.swift in Sources */,
+				C42CCED4279A9A52001AB582 /* HUD.swift in Sources */,
+				C4C48AA1279ED8CA0086904F /* GameSettings.swift in Sources */,
+				C4083D3F2798295700D63CD6 /* YellowShot.swift in Sources */,
+				C4AA50252796B04900BA0984 /* PlayerPlane.swift in Sources */,
+				C4AA50232796AB0600BA0984 /* Cloud.swift in Sources */,
+				C418EADD2795A24100B1962F /* GameViewController.swift in Sources */,
+				C4083D3627981FF600D63CD6 /* BluePowerUp.swift in Sources */,
+				C4AA50292796BE5700BA0984 /* GameBackgroundSprite + Extension prot.swift in Sources */,
+				C418EAD52795A24100B1962F /* AppDelegate.swift in Sources */,
+				C4F65D4627999084006D83CD /* Assets.swift in Sources */,
+				C4AA652F279E87D5006B6F87 /* GameOverScene.swift in Sources */,
+				C499C18B279ACE2A00B726BA /* SceneManager.swift in Sources */,
+				C4083D2E27980C1700D63CD6 /* Enemy.swift in Sources */,
+				C4083D3827981FFD00D63CD6 /* GreenPowerUp.swift in Sources */,
+				C4AA50212796A69900BA0984 /* Island.swift in Sources */,
+				C4AA6528279E7E31006B6F87 /* BestScene.swift in Sources */,
+				C483D3FC27972FE400F3B15D /* PowerUp.swift in Sources */,
+				C4F65D4A27999691006D83CD /* BitMaskCategory.swift in Sources */,
+				C499C18D279AD37D00B726BA /* ParentScene.swift in Sources */,
+				C499C189279AC89600B726BA /* PauseScene.swift in Sources */,
+				C4F65D48279993E9006D83CD /* MenuScene.swift in Sources */,
+				C4083D3D2798275200D63CD6 /* Shot.swift in Sources */,
+				C418EAEC2795A46100B1962F /* Background.swift in Sources */,
+				C42CCED8279A9D83001AB582 /* ButtonNode.swift in Sources */,
+				C499C18F279AD55F00B726BA /* OptionsScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C418EADE2795A24100B1962F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C418EADF2795A24100B1962F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C418EAE32795A24100B1962F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C418EAE42795A24100B1962F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C418EAE62795A24100B1962F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C418EAE72795A24100B1962F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C418EAE92795A24100B1962F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH635DP52L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ya.WarFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C418EAEA2795A24100B1962F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH635DP52L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ya.WarFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C418EACC2795A24100B1962F /* Build configuration list for PBXProject "WarFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C418EAE62795A24100B1962F /* Debug */,
+				C418EAE72795A24100B1962F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C418EAE82795A24100B1962F /* Build configuration list for PBXNativeTarget "WarFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C418EAE92795A24100B1962F /* Debug */,
+				C418EAEA2795A24100B1962F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C418EAC92795A24100B1962F /* Project object */;
+}
